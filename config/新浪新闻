@@ -1,0 +1,1 @@
+{"url":"http://news.sina.com.cn/china/","type":"text","from":"1","to":"1","saveDir":"e:/sina","selector":[{"$":"$(\"div.news-item\").find(\"a\")","attr":"href"}],"isPagination":1,"mode":"web"}

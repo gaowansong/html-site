@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <title>node-crawler</title>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <link href="../../css/amazeui.min.css" rel="stylesheet" />
+    <link href="../../css/ui-dialog.css" rel="stylesheet" />
+    <script src="../../js/dialog-plus-min.js"></script>
+    <script src="../../js/knockout-3.3.0.debug.js"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/main.js"></script>
+    <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+</head>
+<body>
+	<div class="wrap transition" id="Wrap">
+        <% include _nav %>
+        <section class="am-g list-config">
+            <div class="am-u-sm-11 am-u-md-8 am-u-sm-centered">
+                <% include _breadcrumb %>
+                <article data-am-widget="paragraph" class="am-paragraph am-paragraph-default"
+                data-am-paragraph="{ tableScrollable: true, pureview: true }">
+                  <p><%= content.content %></p>
+			    </article>
+            </div>
+        </section>
+</div>
+</body>
+</html>

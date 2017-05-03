@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>node-crawler</title>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <link href="../css/amazeui.min.css" rel="stylesheet" />
+    <link href="../css/ui-dialog.css" rel="stylesheet" />
+    <script src="../js/dialog-plus-min.js"></script>
+    <script src="../js/knockout-3.3.0.debug.js"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+</head>
+<body>
+	<div class="wrap transition" id="Wrap">
+        <div class="nc-header">
+            <div class="am-g">
+                <div class="am-u-sm-1 am-u-sm-offset-2 title">
+                    spider
+                </div>
+                <div class="am-u-sm-8">
+                    <nav data-am-widget="menu" class="list-menu am-menu am-menu-dropdown2" data-am-menu-collapse> 
+                        <a href="javascript: void(0)" class="am-menu-toggle">
+                              <i class="am-menu-toggle-icon am-icon-bars"></i>
+                        </a>
+                        <ul class="am-menu-nav am-avg-sm-4 list-ul am-collapse">
+                              <li class="">
+                                <a href="/" class="" >爬虫任务</a>
+                              </li>
+                              <li class="">
+                                <a href="/tag" class="" >tag管理</a>
+                              </li>
+                              <li class="">
+                                <a href="/hot" class="" >热点类别管理</a>
+                              </li>
+                              <li class="">
+                                <a href="/news" class="" >新闻标注</a>
+                              </li>
+                              <li class="">
+                                <a href="/user" class="" >用户管理</a>
+                              </li>
+                              <li class="">
+                                <a href="/list" class="" >分类标记任务</a>
+                              </li>
+                        </ul>
+                    </nav>
+                </div>          
+            </div>
+        </div>
+        <section class="list-config am-g">
+            <div class="am-u-sm-8 am-u-sm-centered">
+                <!-- <h4>已有配置：</h4> -->
+                <ol class="am-breadcrumb">
+                  <li><a href="#" class="am-icon-home">首页</a></li>
+                  <li class="am-active"><%=item%></li>
+                </ol>
+            </div>
+        </section>
+        <section class="am-g">
+            <div class="am-u-sm-8 am-u-sm-centered">
+                <article data-am-widget="paragraph" class="am-paragraph am-paragraph-default"
+                data-am-paragraph="{ tableScrollable: true, pureview: true }">
+
+			      <img src=http://s.amazeui.org/media/i/demos/bing-1.jpg><p class=paragraph-default-p>南极洲又称<a href=http://zh.wikipedia.org/w/index.php?title=%E7%AC%AC%E4%B8%83%E5%A4%A7%E9%99%86&redirect=no>第七大陆</a>，是地球上最后一个被发现、唯一没有土著人居住的大陆。</p><p>南极大陆为通常所说的南大洋（太平洋、印度洋和大西洋的南部水域）所包围，它与南美洲最近的距离为965公里，距新西兰2000公里、距澳大利亚2500公里、距南非3800公里、距中国北京的距离约有12000公里。南极大陆的总面积为1390万平方公里，相当于中国和印巴次大陆面积的总和，居世界各洲第五位。</p><img src=http://s.amazeui.org/media/i/demos/bing-2.jpg /><p>整个南极大陆被一个巨大的冰盖所覆盖，平均海拔为2350米。南极洲是由冈瓦纳大陆分离解体而成，是世界上最高的大陆。南极横断山脉将南极大陆分成东西两部分。这两部分在地理和地质上差别很大。</p><img src=http://s.amazeui.org/media/i/demos/bing-3.jpg /><p>东南极洲是一块很古老的大陆，据科学家推算,已有几亿年的历史。它的中心位于难接近点，从任何海边到难接近点的距离都很远。东南极洲平均海拔高度2500米，最大高度4800 米。在东南极洲有南极大陆最大的活火山，即位于罗斯岛上的埃里伯斯火山，海拔高度3795米，有四个喷火口</p>
+			  </article>
+            </div>
+        </section>
+</div>
+</body>
+</html>

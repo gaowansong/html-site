@@ -1,0 +1,1 @@
+{"url":"http://www.tuicool.com/topics/10000024","type":"text","from":"1","to":"2","charset":"utf8","saveDir":"e:/tuicool","selector":[{"$":"$(\".aricle_item_info\").find(\"a\")","attr":"href"},{"$":"$(\"div.side_article_list_item\").find(\"a\")","attr":"href"}],"isPagination":1,"mode":"web","id":"122312321"}

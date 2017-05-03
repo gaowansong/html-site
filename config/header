@@ -1,0 +1,1 @@
+{"url":"http://blog.csdn.net/u012453843","type":"text","from":"1","to":"1","charset":"utf-8","saveDir":"e:/zhihu","selector":[{"$":"$(\".link_title\").find(\"a\")","attr":"href"},{"$":"$(\".article_content p\").find(\"span\")","attr":"href"}],"isPagination":1,"mode":"web"}

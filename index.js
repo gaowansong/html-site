@@ -1,8 +1,9 @@
 ﻿var net = require('net');
 var app = require('./lib/app.js');
+var conf = require('./conf.js');
 
 /// 获取可用端口
-var baseport = 3000;
+var baseport = conf.port;
 var ports = [];
 (function getPort(port) {
     var server = net.createServer();

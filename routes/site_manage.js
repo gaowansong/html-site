@@ -6,9 +6,10 @@ var mongoose = require('mongoose');
 router.get('/', function(req, res, next) {
 	site_config.find({}, function(err, data){
         if (data) {
-        	res.render('show_index', {
+        	res.render('index', {
 				list: data,
-		        item: "主页"
+		        wsport: PORTS[1],
+		        item: "站点管理"
 			});
         }
     });

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var filelist = require(ROOT + 'lib/file-list.js');
 var article = require('../model/article.js'); 
+var nodejieba = require("nodejieba");
 var moment = require('moment');
 var mongoose = require('mongoose');
 
@@ -47,10 +48,14 @@ router.get('/site/:id', function (req, res) {
     // var configsName = filelist(ROOT + 'config');
     var _id = mongoose.Types.ObjectId(req.params.id);
     var that = this;
+    var list = [];
+    var resultArray;
+
     article.findOne({_id: _id}, function(err, result){
     	if (result) {
     		res.render('article_content', {
 	            content: result,
+                list: result.list,
                 item: "文章详情"
 	        });
     	}

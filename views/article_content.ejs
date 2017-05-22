@@ -19,8 +19,8 @@
     <script src="../../js/dialog-plus-min.js"></script>
     <script src="../../js/knockout-3.3.0.debug.js"></script>
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="../../js/main.js"></script>
     <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+
 </head>
 <body>
 	<div class="wrap transition" id="Wrap">
@@ -28,12 +28,56 @@
         <section class="am-g list-config">
             <div class="am-u-sm-11 am-u-md-8 am-u-sm-centered">
                 <% include _breadcrumb %>
-                <article data-am-widget="paragraph" class="am-paragraph am-paragraph-default"
+                <div>
+                    <% list.forEach(function(element,index){ %>
+                        <% switch(index % 5){ 
+                           case 0: %>  
+                                <a class="am-badge am-badge-primary am-radius"><%=element%></a>
+                                <% break; %>
+                        <% case 1: %>  
+                                <a class="am-badge am-badge-secondary am-radius"><%=element%></a>
+                                <% break; %>  
+                        <% case 2: %>  
+                                <a class="am-badge am-badge-success am-radius"><%=element%></a>
+                                <% break; %>
+                        <% case 3: %>  
+                                <a class="am-badge am-badge-warning am-radius"><%=element%></a>
+                                <% break; %> 
+                        <% case 3: %>  
+                                <a class="am-badge am-badge-danger am-radius"><%=element%></a>
+                                <% break; %>         
+                        <% } %>
+
+
+                    <% }) %>
+                    
+                    <!-- <a class="am-badge am-badge-primary am-radius">Free</a>
+                    <a class="am-badge am-badge-secondary am-radius">Secondary</a>
+                    <a class="am-badge am-badge-success am-radius">Success</a>
+                    <a class="am-badge am-badge-warning am-radius">Warning</a>
+                    <a class="am-badge am-badge-danger am-radius">Danger</a> -->
+                </div>
+                <div class="a_content" style="display: none;">
+                    <%= content.content %>
+                </div>
+                <article data-am-widget="paragraph" id="article_content" class="am-paragraph am-paragraph-default"
                 data-am-paragraph="{ tableScrollable: true, pureview: true }">
-                  <p><%= content.content %></p>
+                  <!-- <%= content.content %> -->
 			    </article>
+            </div>
+            <div data-am-widget="gotop" class="am-gotop am-gotop-default" >
+                <a href="#top" title="回到顶部">
+                    <span class="am-gotop-title">回到顶部</span>
+                      <i class="am-gotop-icon am-icon-chevron-up"></i>
+                </a>
             </div>
         </section>
 </div>
+<script>
+    $(function(){
+        var str = $(".a_content").text();
+        $("#article_content").html(str);
+    })
+</script>
 </body>
 </html>

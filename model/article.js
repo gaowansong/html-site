@@ -10,7 +10,9 @@ var ArticleSchema = mongoose.Schema({
     title: {type: String},
     site_url: {type: String, unique: true},
     content: {type: String},
-    c_time: {type: Date, default:new Date()}
+    list: {type: Array},
+    c_time: {type: Date, default:new Date()},
+
 });
 
 

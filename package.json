@@ -12,7 +12,7 @@
     "node.js",
     "nodejs爬虫"
   ],
-  "author": "Satrong Cao",
+  "author": "wansong gao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/satrong/node-webcrawler/issues"
@@ -26,14 +26,17 @@
     "debug": "^2.6.3",
     "ejs": "^2.2.4",
     "express": "^4.15.2",
+    "express-session": "^1.15.2",
     "iconv-lite": "^0.4.6",
     "mkdirp": "^0.5.0",
     "moment": "^2.18.1",
     "mongoose": "^4.9.3",
     "mongoose-auto-increment": "^5.0.1",
     "morgan": "^1.8.1",
+    "nodejieba": "^2.2.4",
     "request": "^2.51.0",
     "serve-favicon": "^2.4.2",
-    "ws": "^0.7.1"
+    "ws": "^0.7.1",
+    "xmlbuilder": "^8.2.2"
   }
 }

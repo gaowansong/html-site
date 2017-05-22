@@ -33,8 +33,8 @@ exec.modal = function (_data) {
     };
     dialog({
         title: _data ? "编辑配置" : "新增配置",
-        width: 700,
-        height: 356,
+        width: 300,
+        height: 400,
         padding: '5px 0',
         content: '<div id="AddConfig" class="config-wrap" data-bind="template:{name:\'AddTpl\'}"></div>',
         onshow: function () {
@@ -229,17 +229,18 @@ exec.start = function () {
 
 $(function () {
     $("#ConfigList").delegate('li', {
-        mouseenter: function () {
-            $(this).children('div').show();
-        },
-        mouseleave: function () {
-            $(this).children('div').hide();
-        }
+        // mouseenter: function () {
+        //     $(this).children('div').show();
+        // },
+        // mouseleave: function () {
+        //     $(this).children('div').hide();
+        // }
     }).delegate("li button[tag=remove]", 'click', function () {
         exec.remove.apply(this);
     }).delegate("li button[tag=edit]", "click", function () {
         exec.edit.apply(this);
     }).delegate("li button[tag=start]", "click", function () {
+        // $(this).html('<i class="am-icon-spinner am-icon-spin"></i> 分析中');
         exec.start.apply(this);
     });
     
